@@ -1,6 +1,6 @@
 <template>
 <div>
-  <CometChatUserListWithMessages/>
+  <CometChatGroupListWithMessages/>
     <button v-on:click="logout" class="btn btn-sm bt-primary">Logout</button>
 
 </div>
@@ -8,10 +8,10 @@
 
 <script>
 import { CometChat } from "@cometchat-pro/chat";
-import {CometChatUserListWithMessages} from '../cometchat-ui'
+import {CometChatGroupListWithMessages} from '../cometchat-ui'
 export default {
   components:{
-CometChatUserListWithMessages
+CometChatGroupListWithMessages
   },
   methods:{
      async logout(){

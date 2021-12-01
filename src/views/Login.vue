@@ -7,7 +7,7 @@
   <div class="col-md-4 top-merge">
     <form v-on:submit.prevent="Login">
         <h3>LOGIN!</h3>
-          <p>Welcome to our little JMU Campus Connect Demo, currently the placeholder logins are "superhero1" or "superhero2". To Register, <a href="/register">click here</a>  </p>
+          <p>Welcome to our JMU Campus Connect Demo, to login enter your first name + first inital of your last name (ex: John Doe - johnd).  </p>
             <div class="form-wrapper">
                 <label>Username</label>
                     <input type="text" name="username" id="username" v-model="username" placeholder="Enter your username" class="form-control" required>
@@ -23,7 +23,6 @@
 
 <script>
 import { CometChat } from "@cometchat-pro/chat";
-
 export default {
   data() {
     return {
@@ -35,10 +34,8 @@ export default {
     Login() {
       var AUTH_KEY ='519edb23fb2fcc65c4e4543488c7828dbd172039';
       this.showSpinner = true;
-
                 var user = new CometChat.User(this.username);
                 user.setName(this.username);
-
                 CometChat.createUser(user, AUTH_KEY).then(
                 user => {
                     console.log("user created", user);
@@ -81,7 +78,6 @@ export default {
             
   }
 };
-
 </script>
 <style>
 .top-merge{
