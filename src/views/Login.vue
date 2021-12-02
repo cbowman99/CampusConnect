@@ -2,7 +2,7 @@
   <div class="container">
   <div class="row"> 
   <div class="col-md-6">
-    <img src="../assets/jmu.png" width="500px" height="400px" />
+    <img src="../assets/jmu.png" width="400px" height="400px" />
   </div>
   <div class="col-md-4 top-merge">
     <form v-on:submit.prevent="Login">

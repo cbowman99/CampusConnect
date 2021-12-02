@@ -28,7 +28,7 @@
                   tabIndex="1"
                   v-model="name"
                   autocomplete="off"
-                  placeholder="Enter group name"
+                  placeholder="Enter Course Info (ex: HTH 100 - Personal Wellness)"
                   :style="styles.input"
                 />
               </td>

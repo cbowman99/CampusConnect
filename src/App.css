@@ -28,9 +28,9 @@ button {
   margin-top: 40px;
   cursor: pointer;
   padding: 10px 0;
-  background: #1B47DB;
+  background: #66097e;
   font-size: 14px;
-  color: #fff;
+  color: rgb(241, 241, 241);
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 #CFDFFF, 0 6px 20px 0 #CFDFFF;
   font-weight: 700;
@@ -38,11 +38,11 @@ button {
 }
 
 button:hover {
-  background: #2B57EB;
+  background: #715097;
 }
 
 .login-page {
-  background-color: #204CD2;
+  background-color: #cccccc;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
